@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"Fibonacci-Web-API/api/db"
+	"Fibonacci-Web-API/api/router"
+	"fmt"
+	"log"
+	"net/http"
+)
 
 func main() {
-	fmt.Println("hello")
+	db.New()
+
+	r := router.New()
+	fmt.Println("Starting server on the port 3000...")
+
+	log.Fatal(http.ListenAndServe(":3000", r))
 }
