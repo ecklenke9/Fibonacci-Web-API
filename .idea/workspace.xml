@@ -4,7 +4,6 @@
     <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/controller/controller.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623308779270</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- Updated README.md&#10;- Updated DELETE response">
+      <created>1623341268585</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623341268587</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +226,8 @@
     <MESSAGE value="-Adding a Makefile to make running the application easier." />
     <MESSAGE value="-Adding unit test shells." />
     <MESSAGE value="- Added the beginning stages of integration tests using dockertest&#10;- Updated the Makefile" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added the beginning stages of integration tests using dockertest&#10;- Updated the Makefile" />
+    <MESSAGE value="- Updated README.md&#10;- Updated DELETE response" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Updated README.md&#10;- Updated DELETE response" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -242,43 +249,43 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="348" y="82" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228593153" />
-    <state x="157" y="23" key="CommitChangelistDialog2" timestamp="1623308773956">
+    <state x="157" y="23" key="CommitChangelistDialog2" timestamp="1623341268213">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="157" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623308773955" />
+    <state x="157" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623341268213" />
     <state x="107" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1623006848376" />
     <state x="96" y="84" key="DiffContextDialog" timestamp="1623228899810">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="96" y="84" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228899810" />
-    <state width="1185" height="252" key="GridCell.Tab.0.bottom" timestamp="1623308369762">
+    <state width="1224" height="252" key="GridCell.Tab.0.bottom" timestamp="1623341116253">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1623035056171" />
-    <state width="1185" height="252" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623308369762" />
+    <state width="1224" height="252" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623341116253" />
     <state width="1224" height="198" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1623006376575" />
-    <state width="1185" height="252" key="GridCell.Tab.0.center" timestamp="1623308369761">
+    <state width="1224" height="252" key="GridCell.Tab.0.center" timestamp="1623341116252">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1623035056169" />
-    <state width="1185" height="252" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623308369761" />
+    <state width="1224" height="252" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623341116252" />
     <state width="1224" height="198" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="252" key="GridCell.Tab.0.left" timestamp="1623308369760">
+    <state width="1224" height="252" key="GridCell.Tab.0.left" timestamp="1623341116251">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1623035056167" />
-    <state width="1185" height="252" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623308369760" />
+    <state width="1224" height="252" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623341116251" />
     <state width="1224" height="198" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="252" key="GridCell.Tab.0.right" timestamp="1623308369761">
+    <state width="1224" height="252" key="GridCell.Tab.0.right" timestamp="1623341116252">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1623035056170" />
-    <state width="1185" height="252" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623308369761" />
+    <state width="1224" height="252" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623341116252" />
     <state width="1224" height="198" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1623006376573" />
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623308786593">
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623341270567">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623308786593" />
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623341270567" />
     <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1623006852957" />
     <state x="274" y="77" width="724" height="644" key="find.popup" timestamp="1623303137818">
       <screen x="0" y="23" width="1280" height="725" />
