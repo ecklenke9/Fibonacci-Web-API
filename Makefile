@@ -1,5 +1,8 @@
 docker:
-	docker-compose up
+	@docker-compose up
 
 local:
-	go run main.go
+	@go run main.go
+
+test:
+	@go test -v ./...
