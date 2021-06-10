@@ -4,6 +4,7 @@
 
 <p align="left">Did you know that the Fibonacci Sequence can be found in nature?</p>
 <p align="left">Flower petals grow in a manner that is consistent with the Fibonacci Sequence. This pattern can be seen in lilies (three petals), buttercups (five petals), delphiniums (8 petals) and many more!</p>
+
 <p align="left"><img src="https://i0.wp.com/eminimind.com/wp-content/uploads/2018/06/Fibonacci-Nature.jpg?fit=1024%2C768&ssl=1" width="250" height="180"/></p>
 
 ---

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="- Last change to README.md">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -224,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623341933996</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="- One more change to README.md">
+      <created>1623342245039</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1623342245039</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +247,8 @@
     <MESSAGE value="- Updated README.md&#10;- Updated DELETE response" />
     <MESSAGE value="- Final changes to README.md" />
     <MESSAGE value="- Last change to README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Last change to README.md" />
+    <MESSAGE value="- One more change to README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="- One more change to README.md" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -264,10 +270,10 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="348" y="82" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228593153" />
-    <state x="157" y="23" key="CommitChangelistDialog2" timestamp="1623342029944">
+    <state x="157" y="23" key="CommitChangelistDialog2" timestamp="1623342244716">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="157" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623342029944" />
+    <state x="157" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623342244716" />
     <state x="107" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1623006848376" />
     <state x="96" y="84" key="DiffContextDialog" timestamp="1623228899810">
       <screen x="0" y="23" width="1280" height="725" />
@@ -297,10 +303,10 @@
     <state width="574" height="211" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1623035056170" />
     <state width="1224" height="252" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623341116252" />
     <state width="1224" height="198" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1623006376573" />
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623341963988">
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623342246542">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623341963988" />
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623342246542" />
     <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1623006852957" />
     <state x="274" y="77" width="724" height="644" key="find.popup" timestamp="1623303137818">
       <screen x="0" y="23" width="1280" height="725" />
