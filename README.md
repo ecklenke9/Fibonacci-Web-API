@@ -1,4 +1,4 @@
-#Fibonacci Web API
+<h1/>Fibonacci Web API</h1>
 
 ---
 
@@ -8,15 +8,16 @@ Flower petals grow in a manner that is consistent with the Fibonacci Sequence. T
 
 ---
 
-##Installation
+<h1/>Installation</h1>
 Clone the Fibonacci Web API repository to your local system:
+
 ```sh 
 git clone https://github.com/ecklenke9/fibonacci-web-api.git
 ```
 
 
-##Running the Application
-There are two ways to run this application:
+<h1/>Running the Application</h1>
+<h5/>There are two methods to run this application:</h5>
 
 Docker:
 * Run the following cmd at the root level of the application:
@@ -30,20 +31,20 @@ Locally:
 make local
 ```
 
-##Calling the Endpoints
+<h1/>Calling the Endpoints</h1>
 The following Fibonacci related data can be retrieved from the Fibonacci Web API endpoints: 
 
-Fetch the Fibonacci number given an ordinal (e.g. Fib(11) == 89, Fib(12) == 144)
+Fetch the Fibonacci number given an ordinal (e.g. Fib(11) == 89, Fib(12) == 144):
 ```http request
 GET http://localhost:8080/api/fibonacci/{ordinal}
 ```
 Output:
 ```json
 {
-    "fibonacciNumber": 2
+    "fibonacciNumber": 89
 }
 ```
-Fetch all of the Fibonacci numbers in data store
+Fetch all of the Fibonacci numbers in data store:
 ```http request
 GET http://localhost:8080/api/fibonacci/all
 ```
@@ -70,17 +71,17 @@ Output:
     ]
 }
 ```
-Fetch the number of memoized results less than a given value (e.g. there are 12 intermediate results less than 120)
+Fetch the number of memoized results less than a given value (e.g. there are 12 intermediate results less than 120):
 ```http request
 GET http://localhost:8080/api/fibonacci/memoizedResults/{value}
 ```
 Output:
 ```json
 {
-    "memoizedResults": 4
+    "memoizedResults": 12
 }
 ```
-Clear the data store
+Clear the data store:
 ```http request
 DELETE http://localhost:8080/api/fibonacci/clear
 ```
