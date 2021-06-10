@@ -14,6 +14,7 @@ import (
 var Postgres *gorm.DB
 
 func ConnectDataBase() {
+	// load in .env file containing configs
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalf("error loading .env file")
@@ -30,7 +31,7 @@ func ConnectDataBase() {
 	// initialize a new db connection with the environment variables
 	database, err := gorm.Open("postgres", fmt.Sprintf("host=%s port=%s user=%s dbname=%s sslmode=%s password=%s", dbHost, dbPort, dbUser, dbName, sslMode, dbPassword))
 	if err != nil {
-		panic("failed to connect to database")
+		log.Fatalf("failed to connect to database")
 	}
 
 	// create table 'fibonaccis' if it does not currently exist

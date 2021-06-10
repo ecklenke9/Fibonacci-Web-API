@@ -134,7 +134,7 @@ func Test_fibonacciCalculation(t *testing.T) {
 	}
 }
 
-func Test_upsertFibonacci(t *testing.T) {
+func Test_insertFibonacci(t *testing.T) {
 	type args struct {
 		fibonacciArray []model.Fibonacci
 	}
@@ -143,7 +143,7 @@ func Test_upsertFibonacci(t *testing.T) {
 		args args
 	}{
 		{
-			name: "Successful Upsert Fibonacci",
+			name: "Successful Insert Fibonacci",
 			args: args{},
 		},
 	}

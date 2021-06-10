@@ -7,7 +7,10 @@ import (
 )
 
 func main() {
+	// set the router as the default provided by Gin
 	r := gin.Default()
+
+	// connect to Postgres db
 	db.ConnectDataBase()
 
 	// create routes
@@ -16,5 +19,6 @@ func main() {
 	r.GET("/api/fibonacci/all", controller.GetAllFibonacci)
 	r.DELETE("/api/fibonacci/clear", controller.DeleteAllFibonacci)
 
+	// start serving the application
 	r.Run(":8080")
 }

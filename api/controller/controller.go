@@ -16,6 +16,7 @@ func GetMemoizedResults(c *gin.Context) {
 	var memoizedResults int
 	fibNum := c.Param("fibnum")
 
+	// reach out to Postgres to count the number of rows less than or equal to the fibNum given
 	// SELECT count(*) FROM fibonacci WHERE fib_num <= $1;
 	db.Postgres.Model(&model.Fibonacci{}).Where("fib_num <= $1", fibNum).Count(&memoizedResults)
 
@@ -24,8 +25,11 @@ func GetMemoizedResults(c *gin.Context) {
 }
 
 func GetFibonacci(c *gin.Context) {
+	// create var fibResult to store the fibonacci results
 	var fibResult model.Fibonacci
+	// create var fibNum to store fibNum from fibResult
 	var fibNum int
+	// create var fibArray to store an array of Fibonacci
 	var fibArray []model.Fibonacci
 
 	// pull the ordinal from the request url and convert to int
@@ -40,7 +44,7 @@ func GetFibonacci(c *gin.Context) {
 	if err := db.Postgres.Where("ordinal = ?", c.Param("ordinal")).First(&fibResult).Error; err != nil {
 		// if err do calculation for the ordinal given and all less than
 		fibNum, fibArray = fibonacciCalculation(ordIntVal)
-		upsertFibonacci(fibArray)
+		insertFibonacci(fibArray)
 	}
 
 	// if the fibNum instantiated prior is zero, return fibNum from fibResult
@@ -55,14 +59,15 @@ func GetFibonacci(c *gin.Context) {
 
 func GetAllFibonacci(c *gin.Context) {
 	// create var fibonacciArray to store an array of Fibonacci
-	var fibonacciArray []model.Fibonacci
+	var fibArray []model.Fibonacci
 
+	// reach out to Postgres and select all rows
 	// SELECT * FROM fibonaccis;
 	// unmarshall results from db into fibonacciArray
-	db.Postgres.Find(&fibonacciArray)
+	db.Postgres.Find(&fibArray)
 
 	// return the fibonacciArray
-	c.JSON(http.StatusOK, gin.H{"allFibonacciResults": fibonacciArray})
+	c.JSON(http.StatusOK, gin.H{"allFibonacciResults": fibArray})
 }
 
 func DeleteAllFibonacci(c *gin.Context) {
@@ -72,16 +77,17 @@ func DeleteAllFibonacci(c *gin.Context) {
 	// clear cache
 	cache = nil
 
+	// reach out to Postgres and delete all rows
 	// DELETE * FROM fibonaccis;
-	// Clear the database
+	// clear the database
 	db.Postgres.Delete(&fibonacci)
-	c.JSON(http.StatusOK, gin.H{"message": "Database cleared"})
+	c.JSON(http.StatusOK, gin.H{"message": "database cleared"})
 }
 
 //------------------------- helper functions ----------------
 
-func upsertFibonacci(fibonacciArray []model.Fibonacci) {
-	// upsert all missing fibonacci numbers
+func insertFibonacci(fibonacciArray []model.Fibonacci) {
+	// insert all missing fibonacci numbers
 	if cache == nil {
 		cache = make(map[int]int, 0)
 	}
@@ -100,8 +106,11 @@ func upsertFibonacci(fibonacciArray []model.Fibonacci) {
 }
 
 func fibonacciCalculation(ordinal int) (int, []model.Fibonacci) {
+	// create map to hold ordinals and fibNums
 	fn := make([]model.Fibonacci, 0)
+	// creat var result to hold resulting fibNum
 	var result int
+
 	for i := 0; i <= ordinal; i++ {
 		var f int
 		if i <= 2 {

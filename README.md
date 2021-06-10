@@ -89,7 +89,7 @@ DELETE http://localhost:8080/api/fibonacci/clear
 Output:
 ```json
 {
-    "message": "Database cleared"
+    "message": "database cleared"
 }
 ```
 
