@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="- Refactored application to use gorm for postgres related functionality due to having issues with the import: database/sql not properly reading in the connection string. &#10;- Switched router to use gin instead of gorilla/mux. &#10;- Updated model to account for gorm. &#10;- Moved routes to main for brevity.">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/LICENCE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/godotenv.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/controller/controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623292966779</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- Added comments&#10;- Dockerized application (added Dockerfile and docker-compose.yml)&#10;- Set router to use port 8080">
+      <created>1623298344579</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1623298344580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +180,8 @@
     <MESSAGE value="Created a basic shell for the Fibonacci CRUD API. This shell includes: &#10;- A router package that holds the Router and HandleFuncs.&#10;- A postgres package that creates the Postgres connection and handles the inserts, gets, updates, and deletions.&#10;- A model package that holds the Fibonacci schema." />
     <MESSAGE value="- Updated variable and package names for clarification purposes &#10;- Added router package &#10;- Moved main.go and .env to root level" />
     <MESSAGE value="- Refactored application to use gorm for postgres related functionality due to having issues with the import: database/sql not properly reading in the connection string. &#10;- Switched router to use gin instead of gorilla/mux. &#10;- Updated model to account for gorm. &#10;- Moved routes to main for brevity." />
-    <option name="LAST_COMMIT_MESSAGE" value="- Refactored application to use gorm for postgres related functionality due to having issues with the import: database/sql not properly reading in the connection string. &#10;- Switched router to use gin instead of gorilla/mux. &#10;- Updated model to account for gorm. &#10;- Moved routes to main for brevity." />
+    <MESSAGE value="- Added comments&#10;- Dockerized application (added Dockerfile and docker-compose.yml)&#10;- Set router to use port 8080" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added comments&#10;- Dockerized application (added Dockerfile and docker-compose.yml)&#10;- Set router to use port 8080" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -195,51 +191,55 @@
       <screen x="0" y="23" width="1280" height="727" />
     </state>
     <state x="390" y="310" key="#GOROOT/0.23.1280.727@0.23.1280.727" timestamp="1622957414837" />
-    <state x="352" y="178" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623208004703">
+    <state x="120" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623298776266">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="352" y="178" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.725@0.23.1280.725" timestamp="1623208004703" />
+    <state x="120" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.725@0.23.1280.725" timestamp="1623298776266" />
+    <state x="352" y="178" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1623298803266">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state x="352" y="178" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.725@0.23.1280.725" timestamp="1623298803266" />
     <state x="348" y="82" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1623228593153">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="348" y="82" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228593153" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1623293006732">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1623298343543">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623293006732" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623298343543" />
     <state x="107" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1623006848376" />
     <state x="96" y="84" key="DiffContextDialog" timestamp="1623228899810">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="96" y="84" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228899810" />
-    <state width="1185" height="204" key="GridCell.Tab.0.bottom" timestamp="1623296548118">
+    <state width="1185" height="262" key="GridCell.Tab.0.bottom" timestamp="1623299812334">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1623035056171" />
-    <state width="1185" height="204" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623296548118" />
+    <state width="1185" height="262" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623299812334" />
     <state width="1224" height="198" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1623006376575" />
-    <state width="1185" height="204" key="GridCell.Tab.0.center" timestamp="1623296548117">
+    <state width="1185" height="262" key="GridCell.Tab.0.center" timestamp="1623299812333">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1623035056169" />
-    <state width="1185" height="204" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623296548117" />
+    <state width="1185" height="262" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623299812333" />
     <state width="1224" height="198" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="204" key="GridCell.Tab.0.left" timestamp="1623296548116">
+    <state width="1185" height="262" key="GridCell.Tab.0.left" timestamp="1623299812332">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1623035056167" />
-    <state width="1185" height="204" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623296548116" />
+    <state width="1185" height="262" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623299812332" />
     <state width="1224" height="198" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="204" key="GridCell.Tab.0.right" timestamp="1623296548117">
+    <state width="1185" height="262" key="GridCell.Tab.0.right" timestamp="1623299812334">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1623035056170" />
-    <state width="1185" height="204" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623296548117" />
+    <state width="1185" height="262" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623299812334" />
     <state width="1224" height="198" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1623006376573" />
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623292975845">
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623298349503">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623292975845" />
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623298349503" />
     <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1623006852957" />
     <state x="274" y="77" width="724" height="644" key="find.popup" timestamp="1623298234729">
       <screen x="0" y="23" width="1280" height="725" />
