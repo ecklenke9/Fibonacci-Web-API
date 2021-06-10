@@ -49,7 +49,7 @@ func GetFibonacci(c *gin.Context) {
 	}
 
 	// return the fibNum of the ordinal passed in
-	c.JSON(http.StatusOK, gin.H{"fib": fibNum})
+	c.JSON(http.StatusOK, gin.H{"fibonacciNumber": fibNum})
 	return
 }
 
@@ -62,10 +62,10 @@ func GetAllFibonacci(c *gin.Context) {
 	db.Postgres.Find(&fibonacciArray)
 
 	// return the fibonacciArray
-	c.JSON(http.StatusOK, gin.H{"allFibResults": fibonacciArray})
+	c.JSON(http.StatusOK, gin.H{"allFibonacciResults": fibonacciArray})
 }
 
-func DeleteAllFibonacci(*gin.Context) {
+func DeleteAllFibonacci(c *gin.Context) {
 	// create var fibonacci
 	var fibonacci model.Fibonacci
 
@@ -75,6 +75,7 @@ func DeleteAllFibonacci(*gin.Context) {
 	// DELETE * FROM fibonaccis;
 	// Clear the database
 	db.Postgres.Delete(&fibonacci)
+	c.JSON(http.StatusOK, gin.H{"message": "Database cleared"})
 }
 
 //------------------------- helper functions ----------------
