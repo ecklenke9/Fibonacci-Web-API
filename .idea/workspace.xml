@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/controller/controller_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/db/db_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build Fibonacci-Web-API">
+  <component name="RunManager" selected="Go Test.TestConnectDataBase in Fibonacci-Web-API/api/db">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="fibonacci-web-api" />
       <working_directory value="$PROJECT_DIR$" />
@@ -73,43 +73,48 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Fibonacci-Web-API" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestConnectDataBase in Fibonacci-Web-API/api/db" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="fibonacci-web-api" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/api/db" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <package value="Fibonacci-Web-API" />
+      <package value="Fibonacci-Web-API/api/db" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestConnectDataBase\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Fibonacci-Web-API/cmd/svr" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetMemoizedResults in Fibonacci-Web-API/api/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="fibonacci-web-api" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/api/controller" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/cmd/svr/main.go" />
-      <package value="Fibonacci-Web-API/cmd/svr" />
+      <package value="Fibonacci-Web-API/api/controller" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestGetMemoizedResults\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build Fibonacci-Web-API/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_fibonacciCalculation in Fibonacci-Web-API/api/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="fibonacci-web-api" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/api/controller" />
+      <framework value="gotest" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/test/main.go" />
-      <package value="Fibonacci-Web-API/test" />
+      <package value="Fibonacci-Web-API/api/controller" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_fibonacciCalculation\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build scratch.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_upsertFibonacci in Fibonacci-Web-API/api/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="fibonacci-web-api" />
-      <working_directory value="$PROJECT_DIR$" />
-      <envs>
-        <env name="GO111MODULE" value="off" />
-      </envs>
-      <kind value="FILE" />
-      <filePath value="$APPLICATION_CONFIG_DIR$/scratches/scratch.go" />
-      <package value="Fibonacci-Web-API" />
+      <working_directory value="$PROJECT_DIR$/api/controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Fibonacci-Web-API/api/controller" />
       <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_upsertFibonacci\E$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -123,12 +128,23 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go test Fibonacci-Web-API/api/controller" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="fibonacci-web-api" />
+      <working_directory value="$PROJECT_DIR$/api/controller" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Fibonacci-Web-API/api/controller" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build Fibonacci-Web-API" />
-        <item itemvalue="Go Build.go build Fibonacci-Web-API/test" />
-        <item itemvalue="Go Build.go build Fibonacci-Web-API/cmd/svr" />
-        <item itemvalue="Go Build.go build scratch.go" />
+        <item itemvalue="Go Test.TestConnectDataBase in Fibonacci-Web-API/api/db" />
+        <item itemvalue="Go Test.go test Fibonacci-Web-API/api/controller" />
+        <item itemvalue="Go Test.Test_upsertFibonacci in Fibonacci-Web-API/api/controller" />
+        <item itemvalue="Go Test.Test_fibonacciCalculation in Fibonacci-Web-API/api/controller" />
+        <item itemvalue="Go Test.TestGetMemoizedResults in Fibonacci-Web-API/api/controller" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623298344580</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="-Adding a Makefile to make running the application easier.">
+      <created>1623299903699</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1623299903700</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +204,8 @@
     <MESSAGE value="- Updated variable and package names for clarification purposes &#10;- Added router package &#10;- Moved main.go and .env to root level" />
     <MESSAGE value="- Refactored application to use gorm for postgres related functionality due to having issues with the import: database/sql not properly reading in the connection string. &#10;- Switched router to use gin instead of gorilla/mux. &#10;- Updated model to account for gorm. &#10;- Moved routes to main for brevity." />
     <MESSAGE value="- Added comments&#10;- Dockerized application (added Dockerfile and docker-compose.yml)&#10;- Set router to use port 8080" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added comments&#10;- Dockerized application (added Dockerfile and docker-compose.yml)&#10;- Set router to use port 8080" />
+    <MESSAGE value="-Adding a Makefile to make running the application easier." />
+    <option name="LAST_COMMIT_MESSAGE" value="-Adding a Makefile to make running the application easier." />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -203,43 +227,43 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="348" y="82" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228593153" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1623298343543">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1623299903422">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623298343543" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623299903422" />
     <state x="107" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1623006848376" />
     <state x="96" y="84" key="DiffContextDialog" timestamp="1623228899810">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="96" y="84" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228899810" />
-    <state width="1185" height="262" key="GridCell.Tab.0.bottom" timestamp="1623299812334">
+    <state width="1185" height="175" key="GridCell.Tab.0.bottom" timestamp="1623300747960">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1623035056171" />
-    <state width="1185" height="262" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623299812334" />
+    <state width="1185" height="175" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623300747960" />
     <state width="1224" height="198" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1623006376575" />
-    <state width="1185" height="262" key="GridCell.Tab.0.center" timestamp="1623299812333">
+    <state width="1185" height="175" key="GridCell.Tab.0.center" timestamp="1623300747959">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1623035056169" />
-    <state width="1185" height="262" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623299812333" />
+    <state width="1185" height="175" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623300747959" />
     <state width="1224" height="198" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="262" key="GridCell.Tab.0.left" timestamp="1623299812332">
+    <state width="1185" height="175" key="GridCell.Tab.0.left" timestamp="1623300747959">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1623035056167" />
-    <state width="1185" height="262" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623299812332" />
+    <state width="1185" height="175" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623300747959" />
     <state width="1224" height="198" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="262" key="GridCell.Tab.0.right" timestamp="1623299812334">
+    <state width="1185" height="175" key="GridCell.Tab.0.right" timestamp="1623300747960">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1623035056170" />
-    <state width="1185" height="262" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623299812334" />
+    <state width="1185" height="175" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623300747960" />
     <state width="1224" height="198" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1623006376573" />
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623298349503">
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623299905831">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623298349503" />
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623299905831" />
     <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1623006852957" />
     <state x="274" y="77" width="724" height="644" key="find.popup" timestamp="1623298234729">
       <screen x="0" y="23" width="1280" height="725" />
