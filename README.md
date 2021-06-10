@@ -1,14 +1,15 @@
-<h1/>Fibonacci Web API</h1>
+<h1>Fibonacci Web API</h1>
 
 ---
 
 <p align="left">Did you know that the Fibonacci Sequence can be found in nature?</p>
 <p align="left">Flower petals grow in a manner that is consistent with the Fibonacci Sequence. This pattern can be seen in lilies (three petals), buttercups (five petals), delphiniums (8 petals) and many more!</p>
-<p align="right"><img src="https://i0.wp.com/eminimind.com/wp-content/uploads/2018/06/Fibonacci-Nature.jpg?fit=1024%2C768&ssl=1" width="250" height="180"/></p>
+
+<p align="left"><img src="https://i0.wp.com/eminimind.com/wp-content/uploads/2018/06/Fibonacci-Nature.jpg?fit=1024%2C768&ssl=1" width="250" height="180"/></p>
 
 ---
 
-<h1/>Installation</h1>
+<h1>Installation</h1>
 Clone the Fibonacci Web API repository to your local system:
 
 ```sh 
@@ -16,8 +17,8 @@ git clone https://github.com/ecklenke9/fibonacci-web-api.git
 ```
 
 
-<h1/>Running the Application</h1>
-<h5/>There are two methods to run this application:</h5>
+<h1>Running the Application</h1>
+<h5>There are two methods to run this application:</h5>
 
 Docker:
 * Run the following cmd at the root level of the application:
@@ -31,7 +32,7 @@ Locally:
 make local
 ```
 
-<h1/>Calling the Endpoints</h1>
+<h1>Calling the Endpoints</h1>
 The following Fibonacci related data can be retrieved from the Fibonacci Web API endpoints: 
 
 Fetch the Fibonacci number given an ordinal (e.g. Fib(11) == 89, Fib(12) == 144):
