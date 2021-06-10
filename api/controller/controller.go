@@ -35,14 +35,6 @@ func GetFibonacci(c *gin.Context) {
 		return
 	}
 
-	// check the cache for the ordinal first
-	// this saves a database call
-	fibNum, ok := cache[ordIntVal]
-	if ok {
-		c.JSON(http.StatusOK, gin.H{"fib": fibNum})
-		return
-	}
-
 	// reach out to Postgres to find the ordinal
 	// SELECT * FROM fibonacci WHERE ordinal = 'ordinal' ORDER BY id LIMIT 1;
 	if err := db.Postgres.Where("ordinal = ?", c.Param("ordinal")).First(&fibResult).Error; err != nil {
@@ -51,7 +43,7 @@ func GetFibonacci(c *gin.Context) {
 		upsertFibonacci(fibArray)
 	}
 
-	// if the fibNum instantiated prior is zero, return
+	// if the fibNum instantiated prior is zero, return fibNum from fibResult
 	if fibNum == 0 {
 		fibNum = fibResult.FibNum
 	}
@@ -93,7 +85,7 @@ func upsertFibonacci(fibonacciArray []model.Fibonacci) {
 		cache = make(map[int]int, 0)
 	}
 	for _, fib := range fibonacciArray {
-		// using ok idiom to determine if
+		// use ok idiom to determine if
 		// ordinal has been processed already
 		_, ok := cache[fib.Ordinal]
 		if !ok {

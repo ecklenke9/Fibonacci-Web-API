@@ -3,88 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="68a3bbc7-7d04-49c4-bcd3-011427b8da75" name="Default Changelist" comment="- Refactored application to use gorm for postgres related functionality due to having issues with the import: database/sql not properly reading in the connection string. &#10;- Switched router to use gin instead of gorilla/mux. &#10;- Updated model to account for gorm. &#10;- Moved routes to main for brevity.">
       <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/controller/controller.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/License" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/association.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_create.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_delete.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_query.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_query_preload.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_row_query.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_save.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/callback_update.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_common.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_mysql.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_postgres.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/dialect_sqlite3.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/errors.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/field.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/go.sum" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/interface.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/join_table_handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/logger.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/model_struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/naming.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/scope.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/search.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/test_all.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/gorm/wercker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/inflections.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/github.com/jinzhu/inflection/wercker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/LICENSE.libyaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/apic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/decode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/emitterc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/encode.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/parserc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/readerc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/resolve.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/scannerc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/sorter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/writerc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yaml.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yamlh.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yamlprivateh.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/LICENCE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/godotenv.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/controller/controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/controller/controller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/model/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/router/router.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/AUTHORS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/doc.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/middleware.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/mux.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/regexp.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/route.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/test_helpers.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/LICENCE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/github.com/joho/godotenv/godotenv.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/modules.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/modules.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623229000456</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Refactored application to use gorm for postgres related functionality due to having issues with the import: database/sql not properly reading in the connection string. &#10;- Switched router to use gin instead of gorilla/mux. &#10;- Updated model to account for gorm. &#10;- Moved routes to main for brevity.">
+      <created>1623292966777</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1623292966779</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,48 +203,48 @@
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="348" y="82" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228593153" />
-    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1623292688698">
+    <state x="0" y="23" key="CommitChangelistDialog2" timestamp="1623293006732">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623292688697" />
+    <state x="0" y="23" key="CommitChangelistDialog2/0.23.1280.725@0.23.1280.725" timestamp="1623293006732" />
     <state x="107" y="23" key="CommitChangelistDialog2/0.23.1280.727@0.23.1280.727" timestamp="1623006848376" />
     <state x="96" y="84" key="DiffContextDialog" timestamp="1623228899810">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state x="96" y="84" key="DiffContextDialog/0.23.1280.725@0.23.1280.725" timestamp="1623228899810" />
-    <state width="1185" height="265" key="GridCell.Tab.0.bottom" timestamp="1623292250391">
+    <state width="1185" height="204" key="GridCell.Tab.0.bottom" timestamp="1623296548118">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1623035056171" />
-    <state width="1185" height="265" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623292250391" />
+    <state width="1185" height="204" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1623296548118" />
     <state width="1224" height="198" key="GridCell.Tab.0.bottom/0.23.1280.727@0.23.1280.727" timestamp="1623006376575" />
-    <state width="1185" height="265" key="GridCell.Tab.0.center" timestamp="1623292250390">
+    <state width="1185" height="204" key="GridCell.Tab.0.center" timestamp="1623296548117">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1623035056169" />
-    <state width="1185" height="265" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623292250390" />
+    <state width="1185" height="204" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1623296548117" />
     <state width="1224" height="198" key="GridCell.Tab.0.center/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="265" key="GridCell.Tab.0.left" timestamp="1623292250389">
+    <state width="1185" height="204" key="GridCell.Tab.0.left" timestamp="1623296548116">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1623035056167" />
-    <state width="1185" height="265" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623292250389" />
+    <state width="1185" height="204" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1623296548116" />
     <state width="1224" height="198" key="GridCell.Tab.0.left/0.23.1280.727@0.23.1280.727" timestamp="1623006376572" />
-    <state width="1185" height="265" key="GridCell.Tab.0.right" timestamp="1623292250391">
+    <state width="1185" height="204" key="GridCell.Tab.0.right" timestamp="1623296548117">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
     <state width="574" height="211" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1623035056170" />
-    <state width="1185" height="265" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623292250391" />
+    <state width="1185" height="204" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1623296548117" />
     <state width="1224" height="198" key="GridCell.Tab.0.right/0.23.1280.727@0.23.1280.727" timestamp="1623006376573" />
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623229003488">
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2" timestamp="1623292975845">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623229003488" />
+    <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.725@0.23.1280.725" timestamp="1623292975845" />
     <state x="141" y="53" key="Vcs.Push.Dialog.v2/0.23.1280.727@0.23.1280.727" timestamp="1623006852957" />
-    <state x="274" y="77" width="724" height="644" key="find.popup" timestamp="1623292246457">
+    <state x="274" y="77" width="724" height="644" key="find.popup" timestamp="1623298234729">
       <screen x="0" y="23" width="1280" height="725" />
     </state>
-    <state x="274" y="77" width="724" height="644" key="find.popup/0.23.1280.725@0.23.1280.725" timestamp="1623292246457" />
+    <state x="274" y="77" width="724" height="644" key="find.popup/0.23.1280.725@0.23.1280.725" timestamp="1623298234729" />
     <state x="278" y="88" width="724" height="606" key="find.popup/0.23.1280.727@0.23.1280.727" timestamp="1623005873897" />
     <state x="221" y="23" width="838" height="1032" key="search.everywhere.popup" timestamp="1623115626709">
       <screen x="0" y="23" width="1280" height="725" />
